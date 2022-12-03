@@ -1,0 +1,305 @@
+body
+{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*-------------------------  nevbar starts  -------------------------------------->*/
+
+.nev_area{
+    padding: 3px 3px 3px 20px;
+    display: flex;
+    background-color: #fff;
+}
+.nav-item{
+    margin: 0 20px;
+    font-size: 0.7cm;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+.main-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.main-menu ul li a:hover{
+    color: #122b8f;
+}
+.main-menu ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #2040be;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.main-menu ul li:hover::after{
+    width: 100%;
+    color: #2040be;
+}
+.navbar-nav{
+    padding-left: 300px;
+}
+/*-------------------------  nevbar Ends    -------------------------------------->*/
+
+/*-------------------------  container starts  --------------------------------------*/
+.container{
+    display: flex;
+}
+.banner{
+    padding-top: 30px;
+    width: 600px;
+}
+.fsite{
+    width: 600px;
+    padding-left: 70px;
+    text-transform: capitalize;
+    padding-top: 100px;
+}
+.fsite h2{
+    font-size: 1.5cm;
+    margin-bottom: 0;
+    font-weight: lighter;
+}
+.fsite h1{
+    font-size: 2.5cm;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.fsite h3{
+    font-size: 1cm;
+    margin-top: 10px;
+    font-weight: 100;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 75px;
+    border: 2px solid #122b8f;
+    border: 2px solid #122b8f;
+    background: transparent;
+    cursor: pointer;
+    font-size: large;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+}
+span{
+    background-color: #2040be;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 00.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+    color: #fff;
+}
+/*-------------------------  container ends  -------------------------------------->*/
+
+/*-------------------------  section starts  -------------------------------------->*/
+
+.section{
+    width: 100%;
+    display: flex;
+    text-transform: capitalize;
+}
+.about{
+    padding-left: 50px;
+}
+.intro{
+    margin: 60px 120px;
+    margin-top: 80px;
+    padding: 10px 20px;
+    text-align: left;
+    border: 10px solid rgb(111, 111, 255);
+    border-radius: 30px;
+    border-style: double;
+    box-shadow: 10px 10px 10px rgb(175, 173, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro h1{
+    font-size: 1cm;
+    text-align: center;
+    font-style: oblique;
+}
+/*-------------------------  section ends  -------------------------------------->*/
+
+/*-------------------------  skills starts  -------------------------------------->*/
+.skill{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5cm;
+}
+.myskills{
+    display: flex;
+    justify-content: center;
+}
+.skills{
+    border: 3px solid blue;
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.skills:hover{
+    background-color: #fff;
+    box-shadow: none;
+}
+.img-skill{
+    height: 120px;
+    width: 120px;
+}
+.skills p{
+    font-size: larger;
+}
+/*-------------------------  skills ends  --------------------------------------*/
+/*------------------------- Services Area --------------------------------------- */ 
+.services-area{
+    margin: 100px;
+    display: flex;
+    background-color: rgba(239, 239, 239, 0.6);
+}
+.services-list{
+    padding: 60px 5px;
+    background-color: rgba(239, 239, 239, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 10px;
+}
+.services-list:hover{
+    box-shadow: rgba(0, 0, 0, 0.35)0px 5px 15px;
+}
+.services-list img{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 30px;
+}
+.service-name{
+    font-size: 30px;
+    margin: 0;
+    font-weight: lighter;
+}
+.description{
+    text-align: center;
+    font-size: large;
+}
+/*------------------------- Services Area ends --------------------------------------- */ 
+
+/*------------------------- Contact section--------------------------------------- */ 
+.contact-section-main{
+    /*background-color: aqua;*/
+    padding: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.contact-section{
+    /*background-color: rgb(29, 114, 86);*/
+    width: 800px;
+    height: 470px;
+    display: flex;
+    border: 2px solid #2040be;
+    border-radius: 20px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+     rgba(0, 0, 0, 0.12) 0px -12px 30px,rgba(0, 0, 0, 0.12) 0px -12px 30px,
+     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.contact-info{
+    width: 460px;
+    /*background-color: blue;*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-info h1{
+    font-size: 1cm;
+    color: #2040be;
+}
+.call, .mail, .linkedinpro{
+    background-color: rgba(239, 239, 239, 0.6);
+    margin: 10px;
+    height: 3cm;
+    width: 8cm;
+    border: 1px solid #2040be;
+    border-radius: 50px;
+    text-align: center;
+}
+.call:hover, .mail:hover, .linkedinpro:hover{
+    box-shadow: rgba(38, 57, 77) 0px 20px 30px -10px;
+}
+.c-info{
+    padding: 0;
+    margin: 10px;
+    font-weight: lighter;
+}
+.con-img{
+    height: 100%;
+    width: 270px;
+}
+/*------------------------- Contact section ends--------------------------------------- */ 
+
+/*-----------------------------------footer starts--------------------------------------- */ 
+.footer{
+    height: 400px;
+    background-image: url('img/footer-bg.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.footer h1{
+    font-size: 1cm;
+    color: #2040be;
+    font-weight: lighter;
+}
+.footer h2{
+    margin: 0;
+    font-weight: lighter;
+}
+.footer p{
+    margin: 0;
+    font-weight: bolder;
+    font-size: larger;
+    color: rgb(145, 145, 145);
+}
+.social-accounts{
+    display: inline;
+}
+.insta, .tweet, .facebook, .linked, .youtube{
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+    opacity: 0.4;
+}
+.insta:hover, .tweet:hover, .facebook:hover, .linked:hover, .youtube:hover{
+    opacity: 1;
+}
+/*-----------------------------------footer ends--------------------------------------- */ 
